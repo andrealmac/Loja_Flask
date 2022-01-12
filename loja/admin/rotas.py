@@ -6,3 +6,8 @@ from loja import app, db
 
 def home():
     return "Seja bem vindo a Flask"
+
+@app.route('/registrar')
+
+def registrar():
+    return render_template('admin/registrar.html', title="Registrar_user")
